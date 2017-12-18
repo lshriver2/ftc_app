@@ -1,4 +1,4 @@
-package org.firstinspires.ftc.robotcontroller.external.samples;
+package encoder_teleop;
 
         import com.qualcomm.robotcore.hardware.DcMotor;
         import com.qualcomm.robotcore.hardware.DcMotorSimple;
@@ -8,7 +8,7 @@ package org.firstinspires.ftc.robotcontroller.external.samples;
         import com.qualcomm.robotcore.util.RobotLog;
 
         /**
- + * This is NOT an opmode.
+ + * This is NOT an opmode. tyjtyjdnyfgh
  + *
  + * This class can be used to define all the specific hardware for a single robot.
  + * In this case that robot is a Pushbot.
@@ -31,7 +31,7 @@ package org.firstinspires.ftc.robotcontroller.external.samples;
             public DcMotor  leftBackMotor    = null;
             public DcMotor  rightBackMotor    = null;
 
-     /***
+     /**
             public Servo    leftClaw    = null;
             public Servo    rightClaw   = null;
 
@@ -78,14 +78,16 @@ package org.firstinspires.ftc.robotcontroller.external.samples;
                 leftBackMotor.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
                 rightBackMotor.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
 
-                 /*** Define and initialize ALL installed servos.
+                 /**
+                  Define and initialize ALL installed servos.
                 leftClaw = hwMap.servo.get("left claw");
                 rightClaw = hwMap.servo.get("right claw");
                 leftClaw.setPosition(MID_SERVO);
-                rightClaw.setPosition(MID_SERVO); */
+                rightClaw.setPosition(MID_SERVO);
+                  */
             }
 
-            /***
+            /**
  +     *
  +     * waitForTick implements a periodic delay. However, this acts like a metronome with a regular
  +     * periodic tick.  This is used to compensate for varying processing times for each cycle.
